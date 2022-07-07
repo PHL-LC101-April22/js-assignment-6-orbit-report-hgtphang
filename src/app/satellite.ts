@@ -1,3 +1,6 @@
+// import { style } from "@angular/animations";
+// import { read } from "fs";
+
 export class Satellite {
 
 	name: string;
@@ -15,7 +18,11 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		if (this.type === 'Space Debris'){
+			return true;
+		}else{
+			return false;
+		}
    }
 
 }
